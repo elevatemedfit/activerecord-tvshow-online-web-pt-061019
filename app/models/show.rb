@@ -6,4 +6,5 @@ class Show < ActiveRecord::Base
 
   def Show::most_popular_show
     Show.maximum(:rating) LIMIT 1
+  end
 end
